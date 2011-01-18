@@ -1,0 +1,28 @@
+<div align="center"><font size="3" face="Trebuchet MS" color="#356AA0"><b>Creating Routes</b></font</div>
+<table align="center">
+  <td>
+	<% form_for :routes ,:url => { :action => "create_routes" } do |f| -%>
+		<p><label for="route_url">Route_Url</label><br/>
+		<%= f.text_field :route_url %>
+		</p>
+
+		<p><label for="route_controller">Route Controller</label><br/>
+		<%= f.text_field :route_controller %>
+		</p>
+
+		<p><label for="route_action">Route Action</label><br/>
+		<%= f.text_field :route_action %>
+		</p>
+
+		<p><%= submit_tag 'Create Route' %>
+		</p>
+
+  <% end -%>
+ </td>
+</table>
+ 
+	<table align="center">
+	<td>
+		<p><%= link_to 'Back to List', :action => 'list' %></p>
+	</td>
+	</table>

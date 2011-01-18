@@ -1,0 +1,53 @@
+<!--
+ Copyright 2009 RDR
+
+ This file is part of RDR.
+ 
+ RDR is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ RDR is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+ 
+ Date: 2009-09-3 14:14:29 +5300 (Thus, 25 Sept 2009)
+-->
+
+
+<%=javascript_include_tag 'prototype'%>
+<h1>New Router</h1>
+
+<% form_for(:routerinfo, @routerinfo ,:url => { :controller=>'dynamic_routs',:action => "create_route"}) do |f| %>
+  <%= error_messages_for 'routerinfo' -%>
+
+  <p>
+    <%= f.label :router_url %><br />
+    <%= f.text_field :router_url %>
+  </p>
+  
+  <p>
+    <%= f.label :router_controller %><br />
+             <select id="routerinfo_router_controller" name="routerinfo[router_controller]" onchange="<%= remote_function(:update => 'router_action',:url => {:action =>'actions_list'},:with=> "'cont='+this.value") %>">
+                <option value="selectcont" selected disabled>Select Controller</option>
+                <%=options_for_select ($array)%>               
+             </select>
+   </p>
+  <p>
+    <%= f.label :router_action %><br />
+   <select id="router_action" name="routerinfo[router_action]">
+                 <option value="selectact">Actions</option>                 
+   </select></p>
+  </p>
+  <p>
+    <%= f.submit "create_route" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back',:action=>'list'%>
+
+
+
+
+ 

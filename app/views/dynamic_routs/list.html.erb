@@ -1,0 +1,45 @@
+<!--
+ Copyright 2009 RDR
+
+ This file is part of RDR.
+ 
+ RDR is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ RDR is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+ 
+ Date: 2009-09-3 14:14:29 +5300 (Thus, 25 Sept 2009)
+-->
+
+
+
+
+
+<h1>Listing commutes</h1>
+
+<table>
+	  <tr>
+	    <th>ID</th>
+	    <th>Route_Url</th>
+	    <th>Route_Controller</th>
+	    <th>Route_Action</th>
+	  </tr>
+
+  <% for dr in @dynamic_routes %>
+	  <tr>
+	    <td> <%=h dr.id %></td>  
+	    <td> <a href=<%= request.protocol %><%= request.host_with_port %>/<%= dr.router_url %>> <%=h dr.router_url %> </a></td>
+	    <td><%=h dr.router_controller %></td>
+	    <td><%=h dr.router_action %></td>
+	    <td><%= link_to 'Edit', :action=>'editroute', :id=>dr.id  %></td>   
+	    <td><%= link_to 'Destroy', { :action => 'deleteroute',:id=>dr.id }, :confirm => 'Are you sure?' %></td>
+	 
+	  </tr>
+<% end %>
+</table><br />
+
+    <%=link_to 'New Router', :action=>"controllers_list"  %>

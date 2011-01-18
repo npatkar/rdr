@@ -1,0 +1,979 @@
+# Logfile created on Thu Sep 03 11:47:36 +0530 2009  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mMysql::Error: Table 'mynewrdr.router_infos' doesn't exist: SELECT * FROM `router_infos` [0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (235.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (171.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRouterInfos (20090525104237)
+  [4;35;1mSQL (125.0ms)[0m   [0mCREATE TABLE `router_infos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `router_url` varchar(255), `router_controller` varchar(255), `router_action` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090525104237')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mdescribe `router_infos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `router_infos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#index (for 127.0.0.1 at 2009-09-03 12:41:58) [GET]
+Rendering dynamic_routs/index
+Completed in 93ms (View: 93, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:42:01) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:42:40) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#index (for 127.0.0.1 at 2009-09-03 12:42:45) [GET]
+Rendering dynamic_routs/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:42:47) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:43:58) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:44:58) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 12:45:35) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 12:45:35) [GET]
+Rendering dynamic_routs/create_route
+Completed in 1437ms (View: 1437, DB: 0) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#actions_list (for 127.0.0.1 at 2009-09-03 12:45:48) [POST]
+  Parameters: {"authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis=", "cont"=>"application"}
+
+Errno::ENOENT (No such file or directory - C:\ruby\rdr2_3_2\app\controllers\application.rb):
+  app/controllers/dynamic_routs_controller.rb:126:in `initialize'
+  app/controllers/dynamic_routs_controller.rb:126:in `open'
+  app/controllers/dynamic_routs_controller.rb:126:in `actions_list'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#actions_list (for 127.0.0.1 at 2009-09-03 12:45:50) [POST]
+  Parameters: {"authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis=", "cont"=>"dynamic_routs"}
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/dynamic_routs/actions_list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 12:46:17) [POST]
+  Parameters: {"routerinfo"=>{"router_action"=>"updateroute", "router_controller"=>"dynamic_routs", "router_url"=>"updateR"}, "commit"=>"create_route", "authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis="}
+  [4;35;1mRouterInfo Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRouterInfo Create (16.0ms)[0m   [0mINSERT INTO `router_infos` (`router_action`, `updated_at`, `router_url`, `router_controller`, `created_at`) VALUES('updateroute', '2009-09-03 07:16:17', 'updateR', 'dynamic_routs', '2009-09-03 07:16:17')[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Redirected to http://localhost:3000/dynamic_routs/list
+Completed in 141ms (DB: 32) | 302 Found [http://localhost/dynamic_routs/create_route]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:46:18) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#updateroute (for 127.0.0.1 at 2009-09-03 12:46:20) [GET]
+ROUTE Value : 
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/dynamic_routs_controller.rb:47:in `updateroute'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:46:39) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#updateroute (for 127.0.0.1 at 2009-09-03 12:47:12) [GET]
+ROUTE Value : 
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/dynamic_routs_controller.rb:47:in `updateroute'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 12:47:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 1) [0m
+edit ROUTE Value : 
+Rendering dynamic_routs/editroute
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://localhost/dynamic_routs/editroute/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:47:19) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 12:48:29) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 12:48:29) [GET]
+Rendering dynamic_routs/create_route
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:51:55) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 32ms (View: 0, DB: 16) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#updateroute (for 127.0.0.1 at 2009-09-03 12:52:02) [GET]
+ROUTE Value : 
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/dynamic_routs_controller.rb:47:in `updateroute'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 12:52:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRouterInfo Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 1) [0m
+edit ROUTE Value : 
+Rendering dynamic_routs/editroute
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/dynamic_routs/editroute/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:52:41) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#updateroute (for 127.0.0.1 at 2009-09-03 12:53:00) [GET]
+ROUTE Value : 
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/dynamic_routs_controller.rb:47:in `updateroute'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:53:20) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#deleteroute (for 127.0.0.1 at 2009-09-03 12:53:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRouterInfo Destroy (16.0ms)[0m   [0;1mDELETE FROM `router_infos` WHERE `id` = 1[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/dynamic_routs/list
+Completed in 78ms (DB: 46) | 302 Found [http://localhost/dynamic_routs/deleteroute/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:53:25) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 12:53:26) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 12:53:26) [GET]
+Rendering dynamic_routs/create_route
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#actions_list (for 127.0.0.1 at 2009-09-03 12:53:30) [POST]
+  Parameters: {"authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis=", "cont"=>"dynamic_routs"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/actions_list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 12:53:43) [POST]
+  Parameters: {"routerinfo"=>{"router_action"=>"list", "router_controller"=>"dynamic_routs", "router_url"=>"showRoutes"}, "commit"=>"create_route", "authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis="}
+  [4;36;1mRouterInfo Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRouterInfo Create (0.0ms)[0m   [0;1mINSERT INTO `router_infos` (`router_action`, `updated_at`, `router_url`, `router_controller`, `created_at`) VALUES('list', '2009-09-03 07:23:43', 'showRoutes', 'dynamic_routs', '2009-09-03 07:23:43')[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRouterInfo Load (16.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Redirected to http://localhost:3000/dynamic_routs/list
+Completed in 78ms (DB: 62) | 302 Found [http://localhost/dynamic_routs/create_route]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:53:43) [GET]
+  [4;36;1mRouterInfo Load (16.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 31) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:53:44) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 32ms (View: 0, DB: 16) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:53:51) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/showRoutes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:53:53) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:53:57) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 32ms (View: 0, DB: 16) | 200 OK [http://localhost/showRoutes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 12:54:13) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 12:54:13) [GET]
+Rendering dynamic_routs/create_route
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#actions_list (for 127.0.0.1 at 2009-09-03 12:54:15) [POST]
+  Parameters: {"authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis=", "cont"=>"dynamic_routs"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/actions_list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 12:54:28) [POST]
+  Parameters: {"routerinfo"=>{"router_action"=>"editroute", "router_controller"=>"dynamic_routs", "router_url"=>"EditR"}, "commit"=>"create_route", "authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis="}
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRouterInfo Create (0.0ms)[0m   [0;1mINSERT INTO `router_infos` (`router_action`, `updated_at`, `router_url`, `router_controller`, `created_at`) VALUES('editroute', '2009-09-03 07:24:28', 'EditR', 'dynamic_routs', '2009-09-03 07:24:28')[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Redirected to http://localhost:3000/dynamic_routs/list
+Completed in 63ms (DB: 31) | 302 Found [http://localhost/dynamic_routs/create_route]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:54:28) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 12:54:30) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find RouterInfo without an ID):
+  app/controllers/dynamic_routs_controller.rb:38:in `editroute'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 12:55:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+edit ROUTE Value : 
+Rendering dynamic_routs/editroute
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/dynamic_routs/editroute/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 12:55:11) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 47ms (View: 0, DB: 31) | 200 OK [http://localhost/dynamic_routs/list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 12:55:13) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find RouterInfo without an ID):
+  app/controllers/dynamic_routs_controller.rb:38:in `editroute'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 13:20:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+edit ROUTE Value : 
+Rendering dynamic_routs/editroute
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/dynamic_routs/editroute/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 13:21:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+Rendering dynamic_routs/editroute
+Completed in 32ms (View: 0, DB: 16) | 200 OK [http://localhost/dynamic_routs/editroute/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 13:21:34) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRouterInfo Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+Rendering dynamic_routs/editroute
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/dynamic_routs/editroute/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#updateroute (for 127.0.0.1 at 2009-09-03 13:21:44) [POST]
+  Parameters: {"routerinfo"=>{"router_action"=>"editroute", "id"=>"3", "router_url"=>"EditRo"}, "commit"=>"updateroute", "authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis="}
+ROUTE Value : 
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRouterInfo Update (0.0ms)[0m   [0mUPDATE `router_infos` SET `router_url` = 'EditRo', `updated_at` = '2009-09-03 07:51:44' WHERE `id` = 3[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Redirected to http://localhost:3000/dynamic_routs/list/3
+Completed in 62ms (DB: 62) | 302 Found [http://localhost/dynamic_routs/updateroute]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 13:21:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/dynamic_routs/list/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 14:06:59) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 14:06:59) [GET]
+Rendering dynamic_routs/create_route
+Completed in 0ms (View: 0, DB: 15) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+  [4;36;1mRouterInfo Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#index (for 127.0.0.1 at 2009-09-03 14:36:06) [GET]
+Rendering dynamic_routs/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 14:36:08) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 14:36:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+edit ROUTE Value : 
+Rendering dynamic_routs/editroute
+Completed in 94ms (View: 62, DB: 16) | 200 OK [http://localhost/dynamic_routs/editroute/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 14:36:13) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 47ms (View: 16, DB: 31) | 200 OK [http://localhost/showRoutes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Test1Controller#index (for 127.0.0.1 at 2009-09-03 14:36:53) [GET]
+Rendering test1/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/test1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRouterInfo Load (15.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+  [4;36;1mRouterInfo Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-03 15:28:40) [GET]
+
+ActionController::RoutingError (No route matches "/test1" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#index (for 127.0.0.1 at 2009-09-03 15:28:43) [GET]
+Rendering dynamic_routs/index
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:28:45) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 125ms (View: 94, DB: 15) | 200 OK [http://localhost/showRoutes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 15:28:46) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 15:28:46) [GET]
+Rendering dynamic_routs/create_route
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#actions_list (for 127.0.0.1 at 2009-09-03 15:28:53) [POST]
+  Parameters: {"authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis=", "cont"=>"application"}
+
+Errno::ENOENT (No such file or directory - C:\ruby\rdr2_3_2\app\controllers\application.rb):
+  app/controllers/dynamic_routs_controller.rb:150:in `initialize'
+  app/controllers/dynamic_routs_controller.rb:150:in `open'
+  app/controllers/dynamic_routs_controller.rb:150:in `actions_list'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#actions_list (for 127.0.0.1 at 2009-09-03 15:28:55) [POST]
+  Parameters: {"authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis=", "cont"=>"dynamic_routs"}
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/actions_list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 15:29:09) [POST]
+  Parameters: {"routerinfo"=>{"router_action"=>"list", "router_controller"=>"dynamic_routs", "router_url"=>"test"}, "commit"=>"create_route", "authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis="}
+  [4;35;1mRouterInfo Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRouterInfo Create (0.0ms)[0m   [0mINSERT INTO `router_infos` (`router_action`, `updated_at`, `router_url`, `router_controller`, `created_at`) VALUES('list', '2009-09-03 09:59:09', 'test', 'dynamic_routs', '2009-09-03 09:59:09')[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Redirected to http://localhost:3000/showRoutes
+Completed in 156ms (DB: 16) | 302 Found [http://localhost/dynamic_routs/create_route]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:29:09) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 15, DB: 16) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:29:11) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/test]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:29:16) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 15:29:20) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find RouterInfo without an ID):
+  app/controllers/dynamic_routs_controller.rb:58:in `editroute'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 15:29:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRouterInfo Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 2) [0m
+edit ROUTE Value : 
+Rendering dynamic_routs/editroute
+Completed in 63ms (View: 31, DB: 16) | 200 OK [http://localhost/dynamic_routs/editroute/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#updateroute (for 127.0.0.1 at 2009-09-03 15:29:27) [POST]
+  Parameters: {"routerinfo"=>{"router_action"=>"list", "id"=>"2", "router_url"=>"showRoutes"}, "commit"=>"updateroute", "authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis="}
+ROUTE Value : 
+  [4;35;1mRouterInfo Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 2) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Redirected to http://localhost:3000/dynamic_routs/list/2
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/updateroute]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:29:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/dynamic_routs/list/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#deleteroute (for 127.0.0.1 at 2009-09-03 15:29:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRouterInfo Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (16.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 3) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRouterInfo Destroy (0.0ms)[0m   [0mDELETE FROM `router_infos` WHERE `id` = 3[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/showRoutes
+Completed in 63ms (DB: 63) | 302 Found [http://localhost/dynamic_routs/deleteroute/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:29:30) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/showRoutes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:36:40) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 15:36:43) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 15:36:43) [GET]
+Rendering dynamic_routs/create_route
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:36:45) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/showRoutes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:36:51) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 47ms (View: 0, DB: 31) | 200 OK [http://localhost/test]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 15:36:56) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 15:36:56) [GET]
+Rendering dynamic_routs/create_route
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:36:57) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/showRoutes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 15:37:00) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/test]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mRouterInfo Load (16.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+  [4;36;1mRouterInfo Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#index (for 127.0.0.1 at 2009-09-03 17:22:44) [GET]
+Rendering dynamic_routs/index
+Completed in 140ms (View: 140, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 17:22:45) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 17:22:47) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/test]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 17:22:50) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#editroute (for 127.0.0.1 at 2009-09-03 17:22:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mRouterInfo Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 4) [0m
+edit ROUTE Value : 
+Rendering dynamic_routs/editroute
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/dynamic_routs/editroute/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#actions_list (for 127.0.0.1 at 2009-09-03 17:22:59) [POST]
+  Parameters: {"authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis=", "cont"=>"dynamic_routs"}
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/dynamic_routs/actions_list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#updateroute (for 127.0.0.1 at 2009-09-03 17:23:05) [POST]
+  Parameters: {"routerinfo"=>{"router_action"=>"updateroute", "id"=>"4", "router_controller"=>"dynamic_routs", "router_url"=>"test"}, "commit"=>"updateroute", "authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis="}
+ROUTE Value : 
+  [4;35;1mRouterInfo Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 4) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mRouterInfo Update (0.0ms)[0m   [0;1mUPDATE `router_infos` SET `router_action` = 'updateroute', `updated_at` = '2009-09-03 11:53:05' WHERE `id` = 4[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Redirected to http://localhost:3000/dynamic_routs/list/4
+Completed in 234ms (DB: 62) | 302 Found [http://localhost/dynamic_routs/updateroute]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 17:23:05) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 15, DB: 16) | 200 OK [http://localhost/dynamic_routs/list/4]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 17:23:09) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/test]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#controllers_list (for 127.0.0.1 at 2009-09-03 17:23:16) [GET]
+Redirected to http://localhost:3000/dynamic_routs/create_route
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/dynamic_routs/controllers_list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#create_route (for 127.0.0.1 at 2009-09-03 17:23:16) [GET]
+Rendering dynamic_routs/create_route
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/dynamic_routs/create_route]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#actions_list (for 127.0.0.1 at 2009-09-03 17:23:20) [POST]
+  Parameters: {"authenticity_token"=>"LeYvEYwWbFsq2vmP1slsXZXwKq5h945Cni1Q2zKWwis=", "cont"=>"test1"}
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/dynamic_routs/actions_list]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 17:23:25) [GET]
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;36;1mRouterInfo Columns (31.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 31) | 200 OK [http://localhost/showRoutes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#deleteroute (for 127.0.0.1 at 2009-09-03 17:23:31) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mRouterInfo Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `router_infos`[0m
+  [4;35;1mRouterInfo Load (0.0ms)[0m   [0mSELECT * FROM `router_infos` WHERE (`router_infos`.`id` = 4) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mRouterInfo Destroy (0.0ms)[0m   [0mDELETE FROM `router_infos` WHERE `id` = 4[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/showRoutes
+Completed in 78ms (DB: 78) | 302 Found [http://localhost/dynamic_routs/deleteroute/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DynamicRoutsController#list (for 127.0.0.1 at 2009-09-03 17:23:32) [GET]
+  [4;36;1mRouterInfo Load (0.0ms)[0m   [0;1mSELECT * FROM `router_infos` [0m
+Rendering dynamic_routs/list
+  [4;35;1mRouterInfo Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `router_infos`[0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/showRoutes]
